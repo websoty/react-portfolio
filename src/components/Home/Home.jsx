@@ -2,7 +2,7 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <section>Home</section>
+    <section className='home' id='home'>Home</section>
   )
 }
 
