@@ -1,6 +1,5 @@
-import homeImg from './home-img.webp'
-
+import aboutImg from '../images/about__image.jpg'
 
 export {
-  homeImg
+  aboutImg
 }
