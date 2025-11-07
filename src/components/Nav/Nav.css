@@ -1,7 +1,7 @@
 .nav {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .nav__menu {
@@ -17,7 +17,6 @@
   transition: .3s linear;
 }
 
-.nav__link.active,
 .nav__link:hover {
   color: var(--second-color);
 }
