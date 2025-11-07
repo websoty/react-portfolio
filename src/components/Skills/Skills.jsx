@@ -41,33 +41,6 @@ const Skills = () => {
                   <p>{item.profit}</p>
                 </div>
               ))}
-
-              {/* <div className="experience-card">
-                <div className="upper">
-                  <h3>Cr. Web Developer</h3>
-                  <h5>Full Time | InHouse</h5>
-                  <span>2019 - 2020</span>
-                </div>
-                <div className="hr"></div>
-                <h4 className="label">ib-themes ltd.</h4>
-                <p>
-                  I design and develop services for customers of all sizes,
-                  specializing in creating stylish, modern websites
-                </p>
-              </div>
-              <div className="experience-card">
-                <div className="upper">
-                  <h3>Jr. Web Developer</h3>
-                  <h5>Full Time | Remote</h5>
-                  <span>2018 - 2019</span>
-                </div>
-                <div className="hr"></div>
-                <h4 className="label">Creative Gigs.</h4>
-                <p>
-                  I design and develop services for customers of all sizes,
-                  specializing in creating stylish, modern websites
-                </p>
-              </div> */}
             </div>
           </div>
         </div>
