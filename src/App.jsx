@@ -1,4 +1,4 @@
-import { Header, Footer, Home, Contacts, Skills, Portfolio, About } from "./components/index"
+import { Header, Footer, Home, Contacts, Skills, Focus, Portfolio, About } from "./components/index"
 
 
 
@@ -13,6 +13,7 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Focus/>
       <Portfolio/>
       <Contacts/>
       <div className="container">
