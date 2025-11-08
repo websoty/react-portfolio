@@ -1,0 +1,128 @@
+.portfolio__inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio__img-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    min-width: 300px; 
+}
+
+.portfolio__img-card .img__card {
+    position: relative;
+    max-width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.portfolio__img-card .overlay {
+    transition: 1s linear;
+}
+
+.portfolio__img-card .img__card:hover .overlay {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio__img-card .info {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: .5s linear;
+}
+
+.portfolio__img-card .img__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.portfolio__img-card:hover .info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.img__card h3 {
+    font-size: 32px;
+}
+
+.img__card span {
+    font-size: 22px;
+}
+
+
+.portfolio__model {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: var(--bg-transparent-color-01);
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.portfolio__model.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 11;
+}
+
+.portfolio__model-body {
+    position: relative;
+    background: var(--modal-bg-color);
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: .5s linear;
+    transform: translateY(-50px);
+}
+
+.portfolio__model.active .portfolio__model-body {
+    transform: translateY(0);
+}
+
+.portfolio__model-body h3 {
+    font-size: 32px;
+}
+
+.portfolio__model-body img {
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio__close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+}
