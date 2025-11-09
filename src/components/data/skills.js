@@ -1,14 +1,14 @@
 const skills = [
-  { skill: "Javascript", grade: "+" },
-  { skill: "React", grade: "+" },
-  { skill: "SCSS/SASS", grade: "+" },
-  { skill: "CSS", grade: "+" },
-  { skill: "GIT, GITHUB", grade: "+" },
-  { skill: "VITE", grade: "+" },
-  { skill: "API", grade: "+" },
-  { skill: "SPA", grade: "+" },
-  { skill: "ACCESSIBILITY", grade: "+" },
-  { skill: "CODE SPLITTING", grade: "+" },
+  { skill: "Javascript", grade: "⚙️" },
+  { skill: "React", grade: "⚙️" },
+  { skill: "SCSS/SASS", grade: "⚙️" },
+  { skill: "CSS", grade: "⚙️" },
+  { skill: "GIT, GITHUB", grade: "⚙️" },
+  { skill: "VITE", grade: "⚙️" },
+  { skill: "API", grade: "⚙️" },
+  { skill: "SPA", grade: "⚙️" },
+  { skill: "ACCESSIBILITY", grade: "⚙️" },
+  { skill: "CODE SPLITTING", grade: "⚙️" },
 ];
 
 const exp = [

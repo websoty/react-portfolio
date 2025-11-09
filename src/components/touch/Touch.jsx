@@ -19,7 +19,7 @@ const Touch = () => {
             <h3>to discuss</h3>
             <h2>opportunities</h2>
           </motion.div>
-          <motion.a href="#" className="get__touch-link inner__info-link"
+          <motion.a href="#contact" className="get__touch-link inner__info-link"
               initial="hidden"
               whileInView="visible"
               viewport={{once: false, amount: 0.5}}

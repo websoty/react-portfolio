@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import infoSkills from "../data/skills";
 import Title from "../Title/Title";
 import "./Skills.css";
-import { motionVariantY, motionVariant, motionVariantYF } from "../../utils/animation";
+import { motionVariantY, iconVariant, motionVariantYF } from "../../utils/animation";
 
 const Skills = () => {
   const { skills, exp } = infoSkills;
@@ -60,7 +60,7 @@ const Skills = () => {
                     whileInView="visible"
                     viewport={{once: false, amount: 0.5}}
                     custom={index}
-                    variants={motionVariant}
+                    variants={iconVariant}
                 >
                   <strong><span>{item.work}</span></strong>
                   <div className="hr"></div>

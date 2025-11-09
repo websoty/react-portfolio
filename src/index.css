@@ -3,11 +3,12 @@
 :root {
   /*=======Main theme colors=======*/
   --first-color: #0e2431;
-  --second-color: #6a59d1;
+  --second-color: #5075da;
   --third-color: #777;
+  /* --second-color: #6a59d1; */
 
   /*=======Hover colors=======*/
-  --hover-color: #614fd0;
+  --hover-color: #273294;
 
   /*=======Background colors=======*/
   --body-bg-color: #fefefe;
@@ -32,36 +33,6 @@
   --scroll-bar-color: #c5cadf;
   --scroll-thumb-color: #70768a;
   --scroll-thumb-hover-color: #454f6b;
-}
-.dark-theme {
-  /*=======Main theme colors=======*/
-  --first-color: #fff;
-  --second-color: #6a59d1;
-  --third-color: #a9afc3;
-
-  /*=======Background colors=======*/
-  --body-bg-color: #0e1b31;
-  --card-bg-color: #132347;
-  --modal-bg-color: #102048;
-  --bg-transparent-color: rgba(255, 255, 255, 0.1);
-  --bg-transparent-color-01: rgba(255, 255, 255, 0.1);
-  --liner-color: #454f6b;
-
-  /*=======Color Filter=======*/
-  --color-filter: invert(0);
-
-  /*=======Scroll bar colors=======*/
-  --scroll-bar-color: #c1ceff;
-  --scroll-thumb-color: #282f4e;
-  --scroll-thumb-hover-color: #454f6b;
-}
-
-.dark-theme .nav-menu-btn {
-  background: url(../img/burger-white.svg) no-repeat center;
-}
-
-.dark-theme .nav-menu-btn.close {
-  background: url(../img/close-white.svg) no-repeat center;
 }
 
 *,

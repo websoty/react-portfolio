@@ -53,8 +53,7 @@ const Home = () => {
               custom={2}
               variants={motionVariant}
           >
-            I create stunning websites for you, experienced in web design and
-            development
+            Turning ideas into smooth, high-performing products. Smart code. Bold design. Real impact.
           </motion.p>
           <motion.a 
               initial="hidden"
@@ -62,7 +61,7 @@ const Home = () => {
               viewport={{once: false, amount: 0.5}}
               custom={3}
               variants={motionVariant}
-              href="" 
+              href="#contact" 
               className="home__info-link inner__info-link">
             Contact me
             <FaCircleArrowRight />
