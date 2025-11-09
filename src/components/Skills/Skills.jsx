@@ -1,6 +1,8 @@
+import { motion } from "motion/react";
 import infoSkills from "../data/skills";
 import Title from "../Title/Title";
 import "./Skills.css";
+import { motionVariantY, motionVariant2 } from "../../utils/animation";
 
 const Skills = () => {
   const { skills, exp } = infoSkills;
@@ -9,24 +11,42 @@ const Skills = () => {
       <div className="container flex-center">
         <Title title={"Skills"} subtitle={"Skills"} />
         <div className="inner-content">
-          <div className="skills-description">
-            <h3>Skills</h3>
+          <motion.div className="skills-description"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once: false, amount: 0.5}}
+              custom={0}
+              variants={motionVariantY}
+          >
+            {/* <h3>Skills</h3> */}
             <p>
               Gaining practical experience in modern Front-End development, focusing on creating responsive and user-friendly web interfaces.
             </p>
-          </div>
+          </motion.div>
           <div className="skills-info education-all">
             <div className="education">
-              <h4 className="label">Skills</h4>
+              <motion.h4 className="label"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{once: false, amount: 0.5}}
+                  custom={1}
+                  variants={motionVariantY}
+              >Skills</motion.h4>
               <ul className="bars">
                 {skills.map((item, index) => (
-                  <li className="bar" key={index}>
+                  <motion.li className="bar" key={index}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{once: false, amount: 0.5}}
+                      custom={1}
+                      variants={motionVariant2}
+                  >
                     <div className="info">
                       <span>{item.skill}</span>
                       <span>{item.grade}</span>
                     </div>
                     <div className="line javascript"></div>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </div>
@@ -35,11 +55,17 @@ const Skills = () => {
             <h3 className="work-exp-title">Work & Experience</h3>
             <div className="skills-info">
               {exp.map((item, index) => (
-                <div className="experience-card" key={index}>
+                <motion.div className="experience-card" key={index}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: false, amount: 0.5}}
+                    custom={0}
+                    variants={motionVariant2}
+                >
                   <strong><span>{item.work}</span></strong>
                   <div className="hr"></div>
                   <p>{item.profit}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
