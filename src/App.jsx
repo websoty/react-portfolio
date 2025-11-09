@@ -1,4 +1,4 @@
-import { Header, Footer, Home, Contacts, Skills, Focus, Portfolio, Touch, About } from "./components/index"
+import { Header, Footer, Home, Contacts, Skills, Focus, Portfolio, Touch, About, ScrollTop } from "./components/index"
 
 
 
@@ -19,6 +19,7 @@ function App() {
       <Contacts/>
     </main>
     <Footer/>
+    <ScrollTop/>
     </>
   )
 }
