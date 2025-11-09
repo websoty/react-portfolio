@@ -17,9 +17,6 @@ function App() {
       <Portfolio/>
       <Touch/>
       <Contacts/>
-      <div className="container">
-         <h1>React Portfolio</h1>
-      </div>
     </main>
     <Footer/>
     </>
