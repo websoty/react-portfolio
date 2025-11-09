@@ -1,6 +1,8 @@
 import { ImArrowRight } from "react-icons/im";
 import { FocusModal } from "./FocusModal";
 import { useState } from "react";
+import { motion } from "motion/react";
+import { motionVariantYF } from "../../utils/animation";
 
 
 const FocusItem = ({ focusInfo }) => {
@@ -17,7 +19,13 @@ const FocusItem = ({ focusInfo }) => {
     return (
     <>
       {focusInfo.map((item, index) => (
-        <li className="focus__container" key={index}>
+        <motion.li className="focus__container" key={index}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: false, amount: 0.5}}
+            custom={index}
+            variants={motionVariantYF}
+        >
           <div className="focus__card">
             <item.icon className="item__icon" />
             <h3>{item.title}</h3>
@@ -28,7 +36,7 @@ const FocusItem = ({ focusInfo }) => {
           </div>
           {/* active index = tekushemu index */}
           <FocusModal item={item} isActive={activeIndex === index} closeModal={closeModal} />   
-        </li>
+        </motion.li>
       ))}
     </>
   );

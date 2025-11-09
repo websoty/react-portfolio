@@ -67,6 +67,19 @@ export const motionVariantY = {
   }),
 };
 
+export const motionVariantYF = {
+  hidden: { y: -50, opacity: 0 },
+  visible: (i) => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
+};
+
 export const motionVariantTitle = {
   hidden: { y: -60, opacity: 0 },
   visible: (i) => ({
