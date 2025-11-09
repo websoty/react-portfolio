@@ -1,10 +1,29 @@
+import { motion } from "motion/react";
+import { motionVariantTitle, motionVariantSubTitle } from "../../utils/animation";
 import "./Title.css";
 
 const Title = ({title, subtitle}) => {
   return (
     <>
-      <h2 className="inner__title">{title}</h2>
-      <h3 className="inner__second-title">{subtitle}</h3>
+      <motion.h2 className="inner__title"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{once: false, amount: 0.5}}
+          custom={0}
+          variants={motionVariantTitle}
+      >{title}
+      </motion.h2>
+
+      <motion.h3 className="inner__second-title"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{once: false, amount: 0.5}}
+          custom={0}
+          variants={motionVariantSubTitle}
+    
+      >
+        {subtitle}
+      </motion.h3>
     </>
   );
 };
