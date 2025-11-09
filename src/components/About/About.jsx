@@ -1,8 +1,9 @@
+import { motion } from "motion/react";
 import { aboutImg } from "../../assets/images";
 import Title from "../Title/Title";
 import "./About.css";
 import { FaDownload } from "react-icons/fa";
-
+import { motionVariant2, motionVariant3, motionVariantTitle } from "../../utils/animation";
 
 
 const About = () => {
@@ -13,19 +14,37 @@ const About = () => {
         {/* <h2 className="inner__title">About me</h2>
         <h3 className="inner__second-title">About me</h3> */}
         <div className="about__inner">
-          <div className="about__img">
+          <motion.div className="about__img"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once: false, amount: 0.5}}
+              custom={0}
+              variants={motionVariant2}
+          >
             <img src={aboutImg} alt="about" />
-          </div>
+          </motion.div>
           <div className="about__info">
-            <div className="description">
+            <motion.div className="description"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once: false, amount: 0.5}}
+              custom={0}
+              variants={motionVariant3}
+            >
               <h3>
                 <span>Front-End Developer</span>
               </h3>
               <p>
                 I approach development with attention to detail, clean architecture, and scalability in mind — from UI implementation to state management and performance optimization. I value thoughtful design, accessibility, and seamless user experience as core elements of great products.
               </p>
-            </div>
-            <ul className="professional__list">
+            </motion.div>
+            <motion.ul className="professional__list"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once: false, amount: 0.5}}
+              custom={0}
+              variants={motionVariant3}
+            >
               <li className="list__item">
                 <span className="number">1</span>
                 <span className="text">Year of experience</span>
@@ -38,11 +57,18 @@ const About = () => {
                 <span className="number">∞</span>
                 <span className="text">Passion for code</span>
               </li>
-            </ul>
-            <a href="" className="inner__info-link">
+            </motion.ul>
+            <motion.a 
+              href="" 
+              className="inner__info-link"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once: false, amount: 0.5}}
+              custom={1}
+              variants={motionVariant3}>
               Download
               <FaDownload/>
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>

@@ -26,3 +26,56 @@ export const motionVariant = {
     },
   }),
 };
+
+
+export const motionVariant2 = {
+  hidden: { x: -150, opacity: 0 },
+  visible: (i) => ({
+    x: 0,
+    opacity: 1,
+    transition: {
+      delay: i * 0.4,
+      duration: 0.9,
+      ease: "easeOut",
+    },
+  }),
+};
+
+export const motionVariant3 = {
+  hidden: { x: 150, opacity: 0 },
+  visible: (i) => ({
+    x: 0,
+    opacity: 1,
+    transition: {
+      delay: i * 0.4,
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  }),
+};
+
+export const motionVariantTitle = {
+  hidden: { y: -60, opacity: 0 },
+  visible: (i) => ({
+    y: 0,
+    opacity: 0.1,
+    transition: {
+      delay: i * 0.4,
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  }),
+};
+
+export const motionVariantSubTitle = {
+  hidden: { y: -50, opacity: 0 },
+  visible: (i) => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: i * 0.4,
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  }),
+};
