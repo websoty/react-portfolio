@@ -19,6 +19,7 @@ const Home = () => {
           {icons.map((item, index) => (
           <motion.a 
             href={item.href} 
+            target="blank"
             key={item.id}
             custom={index} // peredacha dynam znacheniya v variants
             variants={iconVariant}    // object , opisivaet state

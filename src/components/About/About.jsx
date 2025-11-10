@@ -60,13 +60,15 @@ const About = () => {
             </motion.ul>
             <motion.a 
               href="" 
+              aria-label="download CV in pdf"
+              download="Stanislav__Borodii-CV.pdf"
               className="inner__info-link"
               initial="hidden"
               whileInView="visible"
               viewport={{once: false, amount: 0.5}}
               custom={1}
               variants={motionVariant3}>
-              Download
+              Download CV
               <FaDownload/>
             </motion.a>
           </div>
