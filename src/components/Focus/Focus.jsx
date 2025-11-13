@@ -1,6 +1,6 @@
 import FocusItem from "./FocusItem";
 import Title from "../Title/Title";
-import focusInfo from "../data/focusinfo";
+import focusInfo from "../data/focusInfo";
 import "./Focus.css";
 import { motion } from "motion/react";
 import { motionVariantY } from "../../utils/animation";
