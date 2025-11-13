@@ -15,6 +15,21 @@
 .header .logo {
   color: var(--first-color);
   font-weight: 600;
+  position: relative;
+}
+
+.header .logo::after {
+  content: 'IN PROGRESS';
+  position: absolute;
+  left: 10px;
+  bottom: -20px;
+  background-color: yellow;
+  width: 200px;
+  height: 30px;
+  transform: rotate(-40deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__inner {
