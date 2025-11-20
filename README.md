@@ -3,7 +3,7 @@
 ## Description 
 Interactive portfolio created in React with Motion animations. An easy interface, smooth transitions and a responsive design that reflects my approach to development - a combination of technical precision and visual dynamics
 ## Demo preview (Netlify)
-[CLICK ME](https://6915bbc787afb40a370f540e--re4ct-portfolio.netlify.app/)
+[CLICK ME](https://rportfolior.netlify.app/)
 
 # Feature e-mail
 - Feedback form through EmailJS, letters are sent directly to e-mail
