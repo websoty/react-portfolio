@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
 import "./Home.css";
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaTelegram, FaGithub } from "react-icons/fa";
 import { FaCircleArrowRight, FaArrowDownLong } from "react-icons/fa6";
 import { iconVariant, motionVariant } from "../../utils/animation";
 
 
 const icons = [
   {id: 1, href: 'https://www.linkedin.com/in/stanislav-borodii/', icon: <FaLinkedin/>},
-  {id: 2, href: 'https://www.instagram.com/naturesprout/', icon: <FaInstagram/>},
+  {id: 2, href: 'https://t.me/isweettears', icon: <FaTelegram/>},
   {id: 3, href: 'https://github.com/websoty', icon: <FaGithub/>},
 ]
 

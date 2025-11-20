@@ -1,4 +1,4 @@
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaTelegram, FaGithub } from "react-icons/fa";
 
 export const infoLinks = [
   { id: 1, href: "skills", label: "skills" },
@@ -9,7 +9,7 @@ export const infoLinks = [
 
 export const followLinks = [
   { id: 1, href: 'https://www.linkedin.com/in/stanislav-borodii/', icon: FaLinkedin },
-  { id: 2, href: 'https://www.instagram.com/naturesprout/', icon: FaInstagram },
+  { id: 2, href: 'https://t.me/isweettears', icon: FaTelegram},
   { id: 3, href: 'https://github.com/websoty', icon: FaGithub },
 
 ]
